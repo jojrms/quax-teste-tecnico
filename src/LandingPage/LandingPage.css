@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+
+header{
+    background-color: red;
+    height: 80px;
+}
+
+.sectionShowEvents{
+    background-color: green;
+    min-height: 200px;
+    display: grid;
+    justify-items: center;
+}
+.iSkolShowDeVerao{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.divShowEvents{
+    width: 60%;
+    height: 150px;
+    display: flex;
+    background-color: red;
+}
+
+.sectionAboutEvent{
+    min-height: 200px;
+    display: flex;
+    background-color: pink;
+}
+
+.sectionMap{
+    min-height: 150px;
+    background-color: blue;
+}
+
+.sectionCompanies{
+    min-height: 150px;
+    background-color: green;
+}
+
+footer{
+    min-height: 150px;
+    background-color: yellow;
+}
