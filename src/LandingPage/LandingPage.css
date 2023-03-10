@@ -3,10 +3,37 @@ body{
     margin: 0;
     display: grid;
 }
+body *{
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 header{
-    background-color: red;
-    height: 80px;
+    height: 230px;
+    background-image: url('../Images/textura_areia.svg');
+    background-size: cover;
+    display: flex;
+}
+header div{
+    margin: 20px auto auto auto;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+}
+header div i{
+    width: 130px;
+    height: 60px;
+    display: block;
+    background-image: url('../Images/skol_icon.svg');
+    background-size: contain;    
+}
+header div img{
+    position: absolute;
+    margin-top: 80px;
+}
+.imgDecoration{
+    position: absolute;
+    margin: -120px 0px 0px 70%;
 }
 
 .sectionShowEvents{
