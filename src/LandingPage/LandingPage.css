@@ -37,22 +37,19 @@ header div img{
 }
 
 .sectionShowEvents{
-    background-color: green;
-    min-height: 200px;
+    height: fit-content;
+    background-color: #F7E135;
+    background-image: url('../Images/waves_decoration.svg');
+    background-size: cover;
     display: grid;
     justify-items: center;
 }
-.iSkolShowDeVerao{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-
-}
 .divShowEvents{
     width: 60%;
-    height: 150px;
-    display: flex;
-    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    margin-top: 130px;
 }
 
 .sectionAboutEvent{
