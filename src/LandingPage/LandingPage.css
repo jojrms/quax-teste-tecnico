@@ -7,6 +7,11 @@ body *{
     background-repeat: no-repeat;
     background-position: center;
 }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 header{
     height: 230px;
@@ -43,6 +48,7 @@ header div img{
     background-size: cover;
     display: grid;
     justify-items: center;
+    border-top: 3px solid white;
 }
 .divShowEvents{
     width: 60%;
@@ -54,8 +60,39 @@ header div img{
 
 .sectionAboutEvent{
     min-height: 200px;
-    display: flex;
-    background-color: pink;
+    display: grid;
+    justify-items: center;
+    background-color: #EDD51A;
+    box-shadow: 0px 0px 9px #0000008f;
+}
+.divGridData{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.spanMap{
+    display: grid;
+    justify-items: center;
+    color: #BC8803;
+    padding: 30px 0px;
+}
+.spanMap:hover{
+    color: #B62118;
+}
+.spanMap:hover img{
+    content: url(../Images/tag_hover_icon.svg);
+}
+.spanMap button{
+    padding: 10px 20px;
+    border: 2px solid #BE8A04;
+    color: #BE8A04;
+    margin-top: 35px;
+    
+}
+.spanMap:hover button{
+    border: 2px solid #B62118;
+    color: #B62118;
+    
 }
 
 .sectionMap{
