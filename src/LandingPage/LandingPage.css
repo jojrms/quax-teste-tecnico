@@ -136,6 +136,10 @@ header div img{
     font-size: 40px;
     color: white;
 }
+.sectionMap #map{
+    height: 300px;
+    background-color: whitesmoke;
+}
 
 .sectionCompanies{
     min-height: 150px;
@@ -154,6 +158,9 @@ header div img{
 }
 
 footer{
-    min-height: 150px;
-    background-color: yellow;
+    min-height: 200px;
+    border-bottom: 7px solid #B00039;
+    background-color: #F7E135;
+    background-image: url(../Images/assinatura_quax.svg);
+    background-position: bottom;
 }
