@@ -8,10 +8,17 @@
     src: url('../fonts/AmsiPro-Bold.otf') format('opentype');
 }
 
+
 @font-face {
     font-family: 'AmsiPro-Regular';
     /* font-weight: ; */
     src: url('../fonts/AmsiPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AmsiPro-Italic';
+    font-style: italic;
+    src: url('../fonts/AmsiPro-Italic.otf') format('opentype');
 }
 
 @font-face {

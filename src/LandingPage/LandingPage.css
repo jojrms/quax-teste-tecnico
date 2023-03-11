@@ -229,6 +229,9 @@ header div img{
     display: flex;
 }
 .sectionCompanies div p{
+    font-family: "AmsiPro-Italic";
+    letter-spacing: 1px;
+    text-align: center;
     margin: auto 0 auto auto;
 }
 
