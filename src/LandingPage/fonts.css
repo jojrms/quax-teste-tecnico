@@ -9,9 +9,26 @@
 }
 
 @font-face {
+    font-family: 'AmsiPro-Regular';
+    /* font-weight: ; */
+    src: url('../fonts/AmsiPro-Regular.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'AmsiProSemiBoldItalic';
     font-style: italic;
     src: url('../fonts/AmsiPro-SemiBoldItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AmsiProCond-Bold';
+    font-weight: bold;
+    src: url('../fonts/AmsiProCond-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AmsiProCond-BoldItalic';
+    font-style: italic;
+    src: url('../fonts/AmsiProCond-BoldItalic.otf') format('opentype');
 }
   
   /* @font-face {
