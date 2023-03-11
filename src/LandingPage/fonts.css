@@ -1,0 +1,35 @@
+/* @font-face {
+    font-family: 'MinhaFonte';
+    src: url('MinhaFonte-Regular.otf') format('opentype');
+} */
+@font-face {
+    font-family: 'AmsiProBold';
+    font-weight: bold;
+    src: url('../fonts/AmsiPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AmsiProSemiBoldItalic';
+    font-style: italic;
+    src: url('../fonts/AmsiPro-SemiBoldItalic.otf') format('opentype');
+}
+  
+  /* @font-face {
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    src: url('MinhaFonte-Italic.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MinhaFonte';
+    font-weight: bold;
+    src: url('MinhaFonte-Bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    font-weight: bold;
+    src: url('MinhaFonte-BoldItalic.otf') format('opentype');
+  }
+   */
