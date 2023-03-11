@@ -139,7 +139,18 @@ header div img{
 
 .sectionCompanies{
     min-height: 150px;
-    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+    color: white;
+    background-color: #B00039;
+}
+.sectionCompanies div{
+    display: flex;
+}
+.sectionCompanies div p{
+    margin: auto 0 auto auto;
 }
 
 footer{
