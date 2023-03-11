@@ -11,7 +11,7 @@ body *{
 body img{
     pointer-events: none;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     margin: 0;
 }
 
@@ -241,4 +241,58 @@ footer{
     background-color: #F7E135;
     background-image: url(../Images/assinatura_quax.svg);
     background-position: bottom;
+    display: grid;
+    justify-items: center;
+    color: #B00039;
+}
+footer .pCopyright{
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    font-family: "AmsiPro-Italic";
+}
+.divContacts{
+    display: flex;
+    grid-gap: 30px;
+}
+.spanPhone, .spanMapData, .spanSocialMidia{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10px;
+    align-items: center;
+}
+.spanSocialMidia{
+    grid-template-columns: repeat(4, auto);
+}
+.socialMidiaIcon{
+    padding: 10px;
+    background-color: #B00039;
+    border-radius: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.spanPhone i{
+    width: 30px;
+    height: 30px;
+    background-image: url(../Images/telefone_icon.svg);
+    background-size: contain;
+}
+.spanMapData i{
+    width: 30px;
+    height: 30px;
+    background-image: url(../Images/marker_icon.svg);
+    background-size: contain;
+}
+.divContentInformations{
+    display: grid;
+    font-family: "AmsiPro-Italic";
+}
+.divContentInformations h4{
+    font-size: 14px
+}
+.divContentInformations p{
+    margin: 0;
+    font-size: 13px;
 }
