@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="LandingPage.css">
+        <link rel="stylesheet" type="text/css" href="LandingPageMobile.css">
         <link rel="stylesheet" type="text/css" href="fonts.css">
-        <script>
-            // Initialize and add the map
-            function initMap() {
-            // The location of Uluru
-            const uluru = { lat: -27.435902911441417, lng: -48.45712896747723 };
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 14,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-            }
 
-            window.initMap = initMap;
-                    </script>
+        <link rel="preload" href="../Images/textura_areia.svg" as="image">
+        <link rel="preload" href="../Images/../Images/feijoada_do_zeca.svg" as="image">
+        <link rel="preload" href="../Images/../Images/arena_pop.svg" as="image">
+        <link rel="preload" href="../Images/../Images/bloco_skol.svg" as="image">
+        <link rel="preload" href="../Images/../Images/peixada_do_gui.svg" as="image">
+
         <title>SKOL | Show de Verão</title>
     </head>
 
@@ -37,10 +27,10 @@
 
         <section class="sectionShowEvents">
             <div class="divShowEvents">
-                <img width="auto" height="300px" src="../Images/feijoada_do_zeca.svg" alt="Feijoada do Zeca">
-                <img width="auto" height="300px" src="../Images/arena_pop.svg" alt="Arena Pop Rock">
-                <img width="auto" height="300px" src="../Images/bloco_skol.svg" alt="Bloco Skol">
-                <img width="auto" height="300px" src="../Images/peixada_do_gui.svg" alt="Peixada do Gui">
+                <img width="150px" height="300px" src="../Images/feijoada_do_zeca.svg" alt="Feijoada do Zeca">
+                <img width="180px" height="300px" src="../Images/arena_pop.svg" alt="Arena Pop Rock">
+                <img width="140px" height="300px" src="../Images/bloco_skol.svg" alt="Bloco Skol">
+                <img width="150px" height="300px" src="../Images/peixada_do_gui.svg" alt="Peixada do Gui">
             </div>
         </section>
 
@@ -103,14 +93,12 @@
 
         <section class="sectionMap">
             <span class="spanTitle">
-                <img width="30px" height="40px" src="../Images/marker.svg" alt="Ícone de um marcador">
+                <img width="25px" height="40px" src="../Images/marker.svg" alt="Ícone de um marcador">
                 <h2>Localização</h2>
             </span>
 
             <div id="map"></div>
-            <script async
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUux-uks70SDVRMkNTx-lqEtVCO1QvNKM&callback=initMap">
-            </script>
+            
 
         </section>
 
@@ -118,12 +106,12 @@
 
             <div>
                 <p>REALIZAÇÃO: </p>
-                <img width="120px" src="../Images/sul_icon.svg" alt="Icone do Sul Entretenimentos">
+                <img width="120px" height="70px" src="../Images/sul_icon.svg" alt="Icone do Sul Entretenimentos">
             </div>
 
             <div>
                 <p>MÍDIA <br> PARTNER: </p>
-                <img width="75px" src="../Images/nsc_icon.svg" alt="Icone do NSC" style="margin-left: 20px;">
+                <img width="75px" height="75px" src="../Images/nsc_icon.svg" alt="Icone do NSC" style="margin-left: 20px;">
             </div>
 
         </section>
@@ -164,6 +152,47 @@
             <p class="pCopyright">Copyright © Show de Verão. Todos os direitos reservados.</p>
 
         </footer>
+
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUux-uks70SDVRMkNTx-lqEtVCO1QvNKM&callback=initMap">
+        </script>
+        <script>
+
+            function initMap() {
+            const local = { lat: -27.435902911441417, lng: -48.45712896747723 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: local,
+            });
+            const marker = new google.maps.Marker({
+                position: local,
+                map: map,
+            });
+            }
+
+            window.initMap = initMap;
+
+            const images = document.querySelectorAll('img[data-src]');
+
+            const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                const img = entry.target;
+                const src = img.getAttribute('data-src');
+                img.setAttribute('src', src);
+                observer.unobserve(img);
+                }
+            });
+            }, options);
+
+            images.forEach(img => {
+            observer.observe(img);
+            });
+        </script>
         
     </body>
 

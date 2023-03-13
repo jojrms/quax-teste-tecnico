@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 body{
     padding: 0;
     margin: 0;
@@ -59,7 +62,6 @@ header div img{
     border-top: 3px solid white;
 }
 .divShowEvents{
-    width: 60%;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
@@ -74,11 +76,12 @@ header div img{
     box-shadow: 0px 0px 9px #0000008f;
 }
 .divGridData{
-    width: 60%;
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
 }
 .spanMap{
+    height: fit-content;
     display: grid;
     justify-items: center;
     color: #BC8803;
@@ -88,7 +91,7 @@ header div img{
     color: #B62118;
 }
 .spanMap h3{
-    font-family: "AmsiProBold";
+    font-family: "AmsiProBold", "sans-serif";
     margin-bottom: 15px;
 }
 
@@ -115,7 +118,7 @@ header div img{
     transform: rotate(-3deg);
 }
 .spanMap button p{
-    font-family: "AmsiProSemiBoldItalic";
+    font-family: "AmsiProSemiBoldItalic", "sans-serif";
     transform: skewX(20deg);
 }
 .spanMap:hover button{
@@ -150,11 +153,11 @@ header div img{
 .divContentTexts h2{
     font-size: 60px;
     letter-spacing: 1px;
-    font-family: "AmsiProCond-BoldItalic";
+    font-family: "AmsiProCond-BoldItalic", "sans-serif";
 }
 .divContentTexts p{
     font-size: 14px;
-    font-family: "AmsiPro-Regular";
+    font-family: "AmsiPro-Regular", "sans-serif";
 }
 .divContentTexts button {
     padding: 0px 20px;
@@ -164,7 +167,7 @@ header div img{
     transform: skewX(-20deg);
     border-radius: 5px;
     margin-top: 60px;
-    font-family: "AmsiProCond-Bold";
+    font-family: "AmsiProCond-Bold", "sans-serif";
 }
 .divContentTexts button::before{
     content: "";
@@ -206,7 +209,7 @@ header div img{
     margin: 10px 10px 0 auto;
 }
 .spanTitle h2{
-    font-family: "AmsiProCond-BoldItalic";
+    font-family: "AmsiProCond-BoldItalic", "sans-serif";
     letter-spacing: 1px;
     font-size: 50px;
     color: white;
@@ -229,7 +232,7 @@ header div img{
     display: flex;
 }
 .sectionCompanies div p{
-    font-family: "AmsiPro-Italic";
+    font-family: "AmsiPro-Italic", "sans-serif";
     letter-spacing: 1px;
     text-align: center;
     margin: auto 0 auto auto;
@@ -249,7 +252,7 @@ footer .pCopyright{
     width: fit-content;
     height: fit-content;
     font-size: 14px;
-    font-family: "AmsiPro-Italic";
+    font-family: "AmsiPro-Italic", "sans-serif";
 }
 .divContacts{
     display: flex;
@@ -287,7 +290,7 @@ footer .pCopyright{
 }
 .divContentInformations{
     display: grid;
-    font-family: "AmsiPro-Italic";
+    font-family: "AmsiPro-Italic", "sans-serif";
 }
 .divContentInformations h4{
     font-size: 14px
