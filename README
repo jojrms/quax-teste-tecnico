@@ -1,0 +1,32 @@
+# SOBRE O PROJETO
+Este código foi desenvolvido para um teste técnico na empresa QUAX, de Itajaí - SC.
+É uma landing page do evento "Show de Verão", da Skol, onde exibe para o usuário a agenda de show, informações e contatos.
+
+O mockup utilizado foi enviado pela própria empresa em um arquivo de extensão psd, assim como as fontes no formato otf.
+
+## LINGUAGENS, FRAMEWORKS E BIBLIOTECAS
+FOi utilizado HTML puro com CSS e JavaScript para exibição do mapa.
+
+## STYLE.CSS
+Conta com 3 arquivos de estilização. 
+Fonts.css carrega e armaneza as fontes requeridas para utilizá-las no código.
+LandingPage.css estiliza toda a LP e LandingPageMobile.css adapta o conteúdo para celular.
+
+## TEMPO DE EXECUÇÃO
+Conforme solicitado pela empresa, o tempo de execução foi:
+
+- 15h20 às 15h30 ( dia 08/03) -> Iniciando repositório e esqueleto da página
+- 22h04 às 22h31 (dia 09/03) -> Iniciando estilização do esqueleto
+- 23h (dia 09/03) -> Finalizando Header
+- 00h11 (dia 09/03) -> Encerrando a seção de datas finalizada
+- 08h30 às 08h50 (dia 10/03) -> Realização da seção de exibição da imagem de marker
+- 23h10 às 23h18 (dia 10/03) -> Realização do título na seção de localização
+- 08h às 08h19 (dia 11/03) -> Realização da seção de mapa
+- 09h40 (dia 11/03) -> Retorno para aplicar as fontes
+- 10h01 (dia 11/03) -> Finalizando arquivo de fontes e seção de mapa de palco
+- 10h43 (dia 11/03) -> Finalizando seção de "sobre arena"
+- 10h55 (dia 11/03) -> Finalizando seção completa do mapa
+- 11h02 (dia 11/03) -> Finalizando seção de parceiros
+- 11h31 (dia 11/03) -> Finalizando footer
+
+TEMPO APROXIMADO DE REALIZAÇÃO DO CÓDIGO: +/- 5h30
